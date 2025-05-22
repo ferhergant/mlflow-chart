@@ -5,5 +5,8 @@ dependencies:
 - name: minio
   repository: https://charts.min.io/
   version: 5.4.0
-digest: sha256:fc4b525288f5ea9228dc718c293c7694adcbd3f7e84d624dfade2f68ee35f84c
-generated: "2025-05-14T22:32:56.496951+02:00"
+- name: metrics-server
+  repository: https://kubernetes-sigs.github.io/metrics-server/
+  version: 3.12.2
+digest: sha256:4948e04bef326ad6ef5de1329a595581800677ecc5e1afe586797840ea4fc9ed
+generated: "2025-05-20T13:56:13.634473+02:00"

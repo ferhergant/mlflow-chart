@@ -35,6 +35,12 @@ dependencies:
     repository: "https://charts.min.io/"
     condition: minio.enabled
 
+  - name: metrics-server
+    version: "3.12.2"
+    repository: https://kubernetes-sigs.github.io/metrics-server/
+    condition: metrics-server.enabled
+
+
 
 keywords:
   - mlflow

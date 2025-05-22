@@ -1,0 +1,12 @@
+[project]
+name = "mlflow-chart"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.2.6"]
+
+[dependency-groups]
+dev = ["black>=25.1.0", "pre-commit>=4.2.0", "ruff>=0.11.10"]
+metaflow = ["metaflow>=2.15.13"]
+model = ["mlflow>=2.22.0", "xgboost>=3.0.1"]

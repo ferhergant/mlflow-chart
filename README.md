@@ -61,6 +61,7 @@ Key components and technologies used:
 2.  **Deploy MLFlow (with bundled MinIO & PostgreSQL):**
     *   Navigate to the MLFlow Helm chart directory (e.g., `helm-charts/mlflow`).
     *   The MLFlow chart should handle the deployment of MinIO (for S3 artifact storage) and PostgreSQL (as the backend store).
+    *   In case you get the following error: ```Error: INSTALLATION FAILED: An error occurred while checking for chart dependencies. You may need to run `helm dependency build` to fetch missing dependencies: found in Chart.yaml, but missing in charts/ directory: postgresql, minio```you can directly run ```helm dependency update mlflow```to download and update the dependencies.
     *   Review the chart's `values.yaml` to ensure internal MinIO and PostgreSQL are enabled and configure them if necessary (e.g., persistence, resource limits).
     *   Deploy MLFlow using Helm. If the chart handles internal S3 and database, you might not need to specify all S3 parameters explicitly, or they might refer to the chart's internal services. Consult the chart's documentation for specific configuration. An example command might still look like:
     ```bash
